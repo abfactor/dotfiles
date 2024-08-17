@@ -1,0 +1,17 @@
+{
+    "workspace.library": [
+        "/usr/share/nvim/runtime/lua",
+        "~/.local/share/nvim/site/pack/deps/start/mini.nvim/lua",
+        "lua"
+    ],
+    "runtime.version": "LuaJIT",
+    "hint.enable": true,
+    "diagnostics.globals": [
+        "vim",
+        "require",
+        "MiniDeps"
+    ],
+    "diagnostics.disable": [
+        "undefined-field"
+    ]
+}
