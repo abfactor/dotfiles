@@ -1,0 +1,75 @@
+live_config_reload = true
+
+import = [
+    "~/.config/alacritty/keybinds.toml",
+]
+
+[bell]
+animation = "EaseOutExpo"
+color = "0xffffff"
+duration = 0
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[cursor]
+blink_interval = 1000
+unfocused_hollow = true
+
+[cursor.style]
+blinking = "Always"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 15.0
+
+[font.bold]
+family = "JetBrains Mono NL"
+style = "Bold"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "JetBrains Mono NL"
+style = "Italic"
+
+[font.normal]
+family = "JetBrains Mono NL"
+style = "Medium"
+
+[font.offset]
+x = 0
+y = 0
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[window]
+decorations = "full"
+decorations_theme_variant = "Dark"
+dynamic_padding = true
+dynamic_title = false
+opacity = 1.00
+resize_increments = true
+title = ""
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.dimensions]
+columns = 90
+lines = 28
+
+[window.padding]
+x = 0
+y = 0

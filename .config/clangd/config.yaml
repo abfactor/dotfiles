@@ -1,0 +1,4 @@
+CompileFlags:
+  # Add: [-std=c++17, -Wall]
+  # Remove: -W*
+  Add: -Wno-unknown-warning-option

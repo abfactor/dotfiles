@@ -1,0 +1,26 @@
+set font "Noto Sans CJK SC 12"
+
+set window-title-basename true
+set statusbar-basename false
+set zoom-center true
+
+# stop at page boundries
+set scroll-page-aware "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+set page-padding 5
+set guioptions ""
+
+# key map
+map f scroll full-down
+map b scroll full-up
+map <C-f> follow
+map q abort
+map Q quit
+map <C-i> recolor
+
+# colorscheme
+include light
+
+# set notification-fg "#ffffff"
+# set notification-bg "#000000"

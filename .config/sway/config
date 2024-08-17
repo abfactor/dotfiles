@@ -1,0 +1,312 @@
+set $mod Mod4
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+bindsym button3 floating toggle
+# title bar
+font pango:DejaVu Sans Mono 10
+
+# title bar
+titlebar_border_thickness 0
+titlebar_padding 0 0
+title_align center
+default_border pixel 1
+default_floating_border pixel 2
+# hide_edge_borders smart_no_gaps
+# gaps
+# gaps inner 4
+# gaps outer 6
+# gaps horizontal 4
+# gaps vertical 2
+
+# focus
+focus_follows_mouse no
+focus_on_window_activation smart
+#bindsym --whole-window $mod+button2 kill
+
+# set $terminal i3-sensible-terminal
+# set $terminal xfce4-terminal
+set $terminal alacritty
+# set $terminal kitty
+# set $terminal gnome-terminal
+bindsym $mod+Return exec $terminal
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+set $menu dmenu_path | dmenu -b -fn 'Droid Sans Mono-9' | xargs swaymsg exec --
+#bindsym $mod+d exec $menu
+
+bindsym $mod+d exec wofi -I --show drun
+bindsym $mod+Shift+d exec wofi --show run
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left 	focus left
+bindsym $mod+Down 	focus down
+bindsym $mod+Up 	focus up
+bindsym $mod+Right 	focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+#bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+bindsym $mod+i split h
+bindsym $mod+o split v
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+f floating toggle
+
+# change focus between tiling / floating windows
+#bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus none
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+set $ws1  "1: Home "
+set $ws2  "2: "
+set $ws3  "3: "
+set $ws4  "4: "
+set $ws5  "5: "
+set $ws6  "6: "
+set $ws7  "7: "
+set $ws8  "8: "
+set $ws9  "9: "
+set $ws10 "10: "
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart
+# bindsym $mod+Shift+r restart
+# exit
+bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit swaywm?' -b 'Yes' 'swaymsg exit'
+
+set $mode_system [l] lock, [e] logout, [s] suspend, [h] hibernate, [r] reboot, [Shift+s] shutdown
+mode "$mode_system" {
+    set $exit_prog ~/.config/sway/i3exit
+    bindsym l exec $exit_prog lock, mode "default"
+    bindsym e exec $exit_prog logout, mode "default"
+    bindsym s exec $exit_prog suspend, mode "default"
+    bindsym h exec $exit_prog hibernate, mode "default"
+    bindsym r exec $exit_prog reboot, mode "default"
+    bindsym Shift+S exec $exit_prog shutdown, mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+p mode "$mode_system"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym j resize shrink height 5 px or 5 ppt
+		# bindsym semicolon resize grow width 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# Dracula
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+    # status_command py3status --wm sway 
+    swaybar_command waybar
+    # swaybar_command swaybar
+    font pango: DejaVu Sans Mono Bold 10
+    position top
+    colors {
+        background #282A36
+        statusline #F8F8F2
+        separator  #44475A
+
+        focused_workspace  #44475A #44475A #F8F8F2
+        active_workspace   #282A36 #44475A #F8F8F2
+        inactive_workspace #282A36 #282A36 #BFBFBF
+        urgent_workspace   #FF5555 #FF5555 #F8F8F2
+        binding_mode       #FF5555 #FF5555 #F8F8F2
+    }
+}
+
+# sway-input see: man 5 sway-input
+set $myTouchPad 1267:91:Elan_Touchpad
+set $touchpad_switcher ~/.config/sway/touchpad.sh
+bindsym $mod+F6 exec $touchpad_switcher
+input $myTouchPad dwt enabled
+input $myTouchPad tap enabled
+input $myTouchPad drag enabled
+input $myTouchPad natural_scroll enabled
+input $myTouchPad scroll_method two_finger
+input $myTouchPad click_method clickfinger
+input $myTouchPad tap_button_map lrm
+
+# seat seat0 xcursor_theme DMZ-White 24
+
+# sway wallpaper
+set $wallpaper ~/Pictures/wallpaper/Lucy.jpg
+# set $displayer DP-3
+set $displayer eDP-1
+set $res 2560x1440@143.912Hz
+output $displayer {
+    bg $wallpaper fill
+    # resolution $res
+    scale 1
+}
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
+bindsym XF86AudioLowerVolume exec amixer set Master 5%-
+# bindsym XF86AudioMute exec  amixer set Master toggle
+bindsym XF86AudioMute exec pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo toggle 
+# Media player controls
+bindsym XF86AudioPlay  exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext  exec playerctl next
+bindsym XF86AudioPrev  exec playerctl previous
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp   exec light -A 10
+bindsym XF86MonBrightnessDown exec light -U 10
+
+set $scrn ~/Pictures/Screenshots
+bindsym Print       exec grim -g "$(slurp)" ~/Pictures/Screenshots/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
+bindsym Shift+Print exec grim -g "$(slurp)" - | wl-copy
+bindsym Ctrl+Print  exec grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | wl-copy 
+
+exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK 
+
+# apps
+# gsd
+exec mako
+exec_always light -N 20
+exec_always fcitx5 -r -d
+# gnome keyring
+exec eval $(gnome-keyring-daemon --start)
+exec export SSH_AUTH_SOCK
+
+# portal
+exec_always systemctl start --user xdg-desktop-portal-gtk.service
+exec_always systemctl start --user xdg-desktop-portal-wlr.service
+
+set $lock swaylock
+exec swayidle \
+    timeout 1200  'exec $lock' \
+    timeout 1260  'swaymsg "output * dpms off"' \
+    resume        'swaymsg "output * dpms on"' \
+    before-sleep  'exec $lock'
+
+bindsym $mod+space exec ~/.config/sway/fcitx5.sh
+
+# by class
+for_window [class="XTerm"] floating enable, border normal
+for_window [class="feh"] floating enable, border normal
+for_window [class="Xfce4-appfinder"] floating enable, border normal
+for_window [class="Thunar"] floating enable, border normal
+for_window [class="Xarchiver"] floating enable, border normal
+for_window [class="Mousepad"] floating enable 
+for_window [app_id="firefox"] title_format "%app_id"
+for_window [app_id="org.telegram.desktop"] floating enable, border none 
+for_window [app_id="eog"] border none, floating enable
+for_window [app_id="bottles"] border none, floating enable
+for_window [app_id="file-roller"] border none, floating enable
+for_window [app_id="org.gnome.Nautilus"] border none
+for_window [app_id="Nautilus"] border none
+for_window [app_id="org.gnome.Evince"] border none
+for_window [app_id="evince"] border none
+for_window [app_id="firefox" title="^Picture-in-Picture$"] floating enable, move position 1200 650, sticky enable
+for_window [app_id="firefox" title="^画中画$"] floating enable, move position 1200 650, sticky enable
+for_window [app_id="firefox" title="^Library$"] floating enable, move position center, border normal
+for_window [app_id="firefox" title="^About Mozilla Firefox$"] floating enable, border normal, move position center
+for_window [app_id="firefox" title="^关于 Mozilla Firefox$"] floating enable, border normal, move position center
+for_window [app_id="gedit"] floating enable
+for_window [app_id="org.zealdocs.zeal"] floating enable, border normal
+for_window [app_id="org.fcitx.fcitx5-config-qt"] floating enable, border normal
+for_window [app_id="totem"] floating enable
+for_window [app_id="com.github.johnfactotum.Foliate"] floating enable
+for_window [app_id="netease-cloud-music-gtk"] floating enable
+for_window [app_id="imv"] floating enable
+for_window [app_id='Alacritty'] border pixel 1
+for_window [class="com.xunlei.download"] floating enable
+for_window [class="weixin"] floating enable, move workspace $ws5
+for_window [class="微信"] floating enable, move workspace $ws5
+for_window [class="miktex-console"] floating enable, border normal
+for_window [app_id="miktex-console"] floating enable, border normal
+for_window [class="qqmusic"] floating enable, border none, move workspace $ws5
+for_window [class="torbrowser-launcher"] floating enable, border normal
+for_window [class="wechat.exe"] floating enable, border normal, move workspace $ws5
+# for_window [class="GoldenDict"] floating enable, sticky disable, move position 1500 650
+for_window [app_id="io.bassi.Amberol"] floating enable
+for_window [app_id="com.github.neithern.g4music"] floating enable
+
+# use 
+# swaymsg -t get_tree
+# get for_window property
+
+xwayland disable
+# xwayland force

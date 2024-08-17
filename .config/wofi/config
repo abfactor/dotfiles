@@ -1,0 +1,15 @@
+matchng=fuzzy
+gtk_dark=true
+allow-images=true
+drun-display_generic=true
+dynamic_lines=false
+no_actions=true
+hide_scoll=true
+columns=1
+layer=overlay
+line_wrap=off
+fork
+key_up=Control_L-k
+key_down=Control_L-j
+key_left=Control_L-h
+key_right=Control_L-l

@@ -1,0 +1,132 @@
+# A valid snippet should starts with:
+#
+#       snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#       endsnippet
+#
+# Snippet options:
+#
+#       b - Beginning of line.
+#       i - In-word expansion.
+#       w - Word boundary.
+#       r - Regular expression
+#       e - Custom context snippet
+#       A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#       snippet emitter "emitter properties" b
+#       private readonly ${1} = new Emitter<$2>()
+#       public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#       endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet ``` "code block"
+\`\`\`${1}
+\`\`\`
+endsnippet
+
+snippet code "code block"
+\`\`\`${1}
+\`\`\`
+endsnippet
+
+snippet pcode "code block"
+\`\`\`python
+${0}
+\`\`\`
+endsnippet
+
+snippet tb
+|  ${0:factors}      |    ${1:a}       |  ${2:b}    |
+| ------------- |-------------  | ------- |
+|    ${3:f1}    |    Y          | N       |
+|    ${4:f2}    |    Y          | N       |
+endsnippet
+
+snippet sec "# Sectoin" b
+## ${1}
+endsnippet
+
+snippet ssec "###" b
+### ${1}
+endsnippet
+
+snippet sub "###" b
+### ${1}
+endsnippet
+
+snippet subsec "####" b
+#### ${1}
+endsnippet
+
+snippet bold "Bold"
+**${1}**
+endsnippet
+
+snippet italic "italic" 
+*${1}*${0}
+endsnippet
+
+snippet delete "delete"
+~~${1}~~
+endsnippet
+
+snippet link "link"
+[${1}](${2})${0}
+endsnippet
+
+snippet image "image"
+![${1}](${2})${0}
+endsnippet
+
+snippet ilink "wikilink"
+[[${1}]]${0}
+endsnippet
+
+snippet footnote "foot note"
+[^${1}]${0}
+endsnippet
+
+# Math
+snippet mm "Inline mode" w
+$${0}$
+endsnippet
+
+snippet MM "Display mode" b
+$$
+${0}
+$$
+endsnippet
+
+snippet mc mathcal
+\\mathcal{${1:${VISUAL:text}}}${0}
+endsnippet
+
+snippet begin "begin block" b
+\\begin{${1:tabular}}
+    ${0:${VISUAL}}
+\\end{$1}
+endsnippet
+
+snippet gat gather(ed) environment
+\\begin{gather${1:ed}}
+    ${0:${VISUAL}}
+\\end{gather$1}
+endsnippet
+snippet eq equation environment
+\\begin{equation}
+    ${0:${VISUAL}}
+\\end{equation}
+endsnippet
+
+snippet lim limit
+\\lim_{{$1}} {{$2}} {$0}
+endsnippet
+
+snippet \x cross product
+\\times {$0}
+endsnippet
