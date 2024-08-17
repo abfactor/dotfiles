@@ -1,0 +1,76 @@
+{
+    "security.workspace.trust.emptyWindow": false,
+    "security.workspace.trust.enabled": false,
+    "git.openRepositoryInParentFolders": "always",
+    "telemetry.telemetryLevel": "off",
+    "editor.minimap.enabled": false,
+    "editor.suggest.preview": true,
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'JetBrains Mono NL','Droid Sans Mono', 'monospace', monospace",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    "editor.trimAutoWhitespace": true,
+    "editor.renderWhitespace": "trailing",
+
+    "terminal.external.linuxExec": "kgx",
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpen",
+        "-workbench.action.terminal.focusFind",
+    ],
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.confirmOnExit": "hasChildProcesses",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.fontFamily": "'JetBrains Mono NL'",
+    "terminal.integrated.fontSize": 17,
+    "terminal.integrated.shellIntegration.enabled": false,
+    "settingsSync.ignoredSettings": [
+
+    ],
+    "extensions.ignoreRecommendations": true,
+    "markdownlint.config": {
+    },
+    "window.dialogStyle": "custom",
+    "window.title": " ${appName}",
+
+    "workbench.list.scrollByPage": true,
+    "workbench.editor.defaultBinaryEditor": "hexEditor.hexedit",
+    "workbench.editor.pinnedTabSizing": "shrink",
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "top",
+    "window.menuBarVisibility": "compact",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim/vscode.lua",
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.startupPrompt": "never",
+    "Lua.workspace.library": [
+        "/usr/share/nvim/runtime/lua/"
+    ],
+    "[markdown]": {
+        "diffEditor.ignoreTrimWhitespace": true,
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "workbench.tips.enabled": false,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.autoLockGroups": {
+        "workbench.editor.chatSession": true,
+        "imagePreview.previewEditor": true
+    },
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.limit.value": 7,
+    "workbench.editor.limit.enabled": true,
+    "window.density.editorTabHeight": "compact",
+    "window.customTitleBarVisibility": "auto",
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
+    "vscodeMarkdownNotes.createNoteOnGoToDefinitionWhenMissing": false,
+    "svg.preview.mode": "svg",
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "workbench.colorTheme": "GitHub Dark",
+}
