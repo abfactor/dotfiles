@@ -12,12 +12,70 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"Head": {
+		"prefix": ["hh", "head"],
+		"body": "# $1"
+	},
 	"Section": {
 		"prefix": "sec",
 		"body": [
 			"## $1",
+			"",
 			"$2"
 		],
 		"description": "MD Section"
-	}
+	},
+	"Sub-section": {
+		"prefix": "ssec",
+		"body": [
+			"### $1",
+			"",
+			"$2"
+		],
+		"description": "MD sub Section"
+	},
+	"cpp": {
+		"prefix": "cpp",
+		"body": [
+			"```cpp",
+			"$1",
+			"```"
+		]
+	},
+	"python": {
+		"prefix": "python",
+		"body": [
+			"```py",
+			"$1",
+			"```"
+		]
+	},
+	"code": {
+		"prefix": "code",
+		"body": [
+			"```$1",
+			"$2",
+			"```"
+		]
+	},
+	"inline code": {
+		"prefix": "icode",
+		"body": [
+			"`$1`",
+		]
+	},
+	"math": {
+		"prefix": "math",
+		"body": [
+			"$$",
+			"$1",
+			"$$"
+		]
+	},
+	"inline math": {
+		"prefix": "imath",
+		"body": [
+			"$$1$",
+		]
+	},
 }
