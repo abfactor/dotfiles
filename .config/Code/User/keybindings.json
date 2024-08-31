@@ -25,4 +25,59 @@
         "command": "jumpToPrevSnippetPlaceholder",
         "when": "editorTextFocus && hasPrevTabstop && inSnippetMode"
     },
+    {
+        "key": "alt+k",
+        "command": "cursorMove",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 1
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "cursorMove",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 1
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+h",
+        "command": "cursorMove",
+        "args": {
+            "to": "left",
+            "by": "character",
+            "value": 1
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+l",
+        "command": "cursorMove",
+        "args": {
+            "to": "right",
+            "by": "character",
+            "value": 1
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+d alt+d",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+e",
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+a",
+        "command": "cursorHome",
+        "when": "editorTextFocus"
+    }
 ]
