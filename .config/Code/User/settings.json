@@ -10,8 +10,7 @@
     "editor.minimap.enabled": false,
     "editor.suggest.preview": true,
     "editor.fontSize": 16,
-    "editor.fontFamily": "'JetBrains Mono NL','Droid Sans Mono', 'monospace', monospace",
-    "editor.cursorSmoothCaretAnimation": "explicit",
+    "editor.fontFamily": "'JetBrains Mono NL','Droid Sans Mono', 'monospace'",
     "editor.trimAutoWhitespace": true,
     "editor.renderWhitespace": "trailing",
     "editor.inlineSuggest.suppressSuggestions": true,
@@ -38,7 +37,6 @@
         "asvetliakov.vscode-neovim": 1
     },
     "markdownlint.config": {},
-    "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim/vscode.lua",
     "Lua.workspace.library": [
         "/usr/share/nvim/runtime/lua/"
     ],
@@ -70,7 +68,6 @@
     "window.dialogStyle": "custom",
     "window.enableMenuBarMnemonics": false,
     "window.density.editorTabHeight": "compact",
-    "window.titleBarStyle": "custom",
     "window.customTitleBarVisibility": "auto",
     "window.menuBarVisibility": "compact",
 
@@ -81,5 +78,6 @@
         "diffEditor.ignoreTrimWhitespace": true,
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
-
+    "window.titleBarStyle": "custom",
+    "window.commandCenter": false,
 }
