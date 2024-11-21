@@ -8,7 +8,7 @@ function av() {
 
 # proxy
 function set_proxy() {
-    export all_proxy=http://127.0.0.1:7890
+    export all_proxy=http://127.0.0.1:7897
 }
 function unset_proxy() {
     unset all_proxy

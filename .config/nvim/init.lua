@@ -2,12 +2,8 @@
 require('options')
 require('utils')
 
-init_mini_nvim()
-add_packages()
-
 -- Colors
 vim.opt.bg = 'dark'
-vim.cmd.colorscheme('edge')
 vim.cmd 'highlight MatchParen term=underline gui=underline cterm=underline'
 vim.cmd 'highlight Normal ctermbg=NONE guibg=NONE'
 
@@ -30,7 +26,6 @@ vim.g.loaded_ruby_provider = 0
 vim.api.nvim_create_user_command('Term', ':tab term', {})
 vim.keymap.set('n', '<leader>t', ':Term<CR>', { silent = true })
 
-require("cfg.lsp_cfg")
-require('cfg.treesitter_cfg')
-require("cfg.lualine_cfg")
--- require('cfg.coc_cfg')
+require('line')
+-- require("cfg.lsp_cfg")
+-- require('cfg.treesitter_cfg')

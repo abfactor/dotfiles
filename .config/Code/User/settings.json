@@ -6,9 +6,6 @@
 
     "git.openRepositoryInParentFolders": "always",
     "telemetry.telemetryLevel": "off",
-
-    "editor.minimap.enabled": false,
-    "editor.suggest.preview": true,
     "editor.fontSize": 16,
     "editor.fontFamily": "'JetBrains Mono NL','Droid Sans Mono', 'monospace'",
     "editor.trimAutoWhitespace": true,
@@ -56,7 +53,7 @@
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.limit.value": 7,
     "workbench.editor.limit.enabled": true,
-    "workbench.colorTheme": "GitHub Dark",
+    "workbench.colorTheme": "One Monokai",
     "workbench.activityBar.location": "top",
 
     "explorer.confirmDelete": true,
@@ -80,4 +77,15 @@
     },
     "window.titleBarStyle": "custom",
     "window.commandCenter": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.accessibilitySupport": "off",
+    "editor.cursorBlinking": "smooth",
+    "editor.minimap.enabled": false,
+    "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }

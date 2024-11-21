@@ -2,7 +2,7 @@ vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.swapfile = false
 vim.opt.undofile = true
-vim.opt.updatetime = 300
+vim.opt.updatetime = 100
 
 -- https://github.com/neovim/neovim/issues/11804
 -- opt.clipboard = "unnamedplus"
@@ -17,7 +17,7 @@ vim.opt.smartcase = true
 vim.opt.smartindent = true
 
 vim.opt.mouse = "a"
--- vim.opt.mousemodel = "extend"
+vim.opt.mousemodel = "extend"
 
 vim.opt.pumheight = 10
 vim.opt.cmdheight = 0

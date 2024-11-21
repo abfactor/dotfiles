@@ -1,5 +1,5 @@
-// 将键绑定放在此文件中以覆盖默认值
 [
+    // Snippets
     {
         "key": "ctrl+p",
         "command": "selectPrevSuggestion",
@@ -25,6 +25,7 @@
         "command": "jumpToPrevSnippetPlaceholder",
         "when": "editorTextFocus && hasPrevTabstop && inSnippetMode"
     },
+    // Moving
     {
         "key": "alt+k",
         "command": "cursorMove",
@@ -79,5 +80,103 @@
         "key": "alt+a",
         "command": "cursorHome",
         "when": "editorTextFocus"
-    }
+    },
+    {
+        "command": "runCommands",
+        "key": "alt+b",
+        "args": {
+            "commands": [
+                "scrollPageUp",
+                "cursorPageUp",
+            ],
+        },
+        "when": "textInputFocus"
+    },
+    {
+        "command": "runCommands",
+        "key": "alt+f",
+        "args": {
+            "commands": [
+                "scrollPageDown",
+                "cursorPageDown",
+            ],
+        },
+        "when": "textInputFocus"
+    },
+    // i_CTRL-O execute one comand, return to Insert mode
+    {
+        "key": "ctrl+o a",
+        "command": "cursorMove",
+        "args": {
+            "to": "right",
+            "by": "character",
+            "value": 1
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+o shift+a",
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+o 0",
+        "command": "cursorHome",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+o s",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+o /",
+        "command": "actions.find",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+o shift+;",
+        "command": "workbench.action.showCommands",
+        "when": "editorFocus || editorIsOpen"
+    },
+    // Annoying browser features
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "-workbench.action.files.openFolderViaWorkspace",
+        "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "-workbench.action.files.openFileFolder",
+        "when": "isMacNative && openFolderWorkspaceSupport"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "-workbench.action.files.openFile",
+        "when": "true"
+    },
+    // ctrl+h as backspace
+    {
+        "key": "ctrl+h",
+        "command": "-editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "deleteLeft",
+        "when": "editorFocus || editorIsOpen"
+    },
+
 ]
