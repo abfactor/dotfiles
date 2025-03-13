@@ -198,5 +198,6 @@ vim.g.coc_global_extensions = {
     'coc-json',
     'coc-clangd',
     'coc-rust-analyzer',
-    'coc-markdownlint'
+    'coc-markdownlint',
+    'coc-highlight'
 }

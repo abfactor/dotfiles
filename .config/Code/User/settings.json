@@ -6,7 +6,7 @@
 
     "git.openRepositoryInParentFolders": "always",
     "telemetry.telemetryLevel": "off",
-    "editor.fontSize": 16,
+    "editor.fontSize": 20,
     "editor.fontFamily": "'JetBrains Mono NL','Droid Sans Mono', 'monospace'",
     "editor.trimAutoWhitespace": true,
     "editor.renderWhitespace": "trailing",
@@ -53,7 +53,6 @@
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.limit.value": 7,
     "workbench.editor.limit.enabled": true,
-    "workbench.colorTheme": "One Monokai",
     "workbench.activityBar.location": "top",
 
     "explorer.confirmDelete": true,
@@ -61,12 +60,7 @@
     "svg.preview.mode": "svg",
 
     "window.title": " ${appName}",
-    "window.zoomLevel": 1,
     "window.dialogStyle": "custom",
-    "window.enableMenuBarMnemonics": false,
-    "window.density.editorTabHeight": "compact",
-    "window.customTitleBarVisibility": "auto",
-    "window.menuBarVisibility": "compact",
 
     "[cpp]": {
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
@@ -75,8 +69,6 @@
         "diffEditor.ignoreTrimWhitespace": true,
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
-    "window.titleBarStyle": "custom",
-    "window.commandCenter": false,
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.smoothScrolling": true,
     "workbench.list.smoothScrolling": true,
@@ -86,6 +78,21 @@
     "editor.minimap.enabled": false,
     "editor.inlineSuggest.syntaxHighlightingEnabled": true,
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "workbench.colorTheme": "Monokai",
+    "window.enableMenuBarMnemonics": false,
+    "security.promptForLocalFileProtocolHandling": false,
+    "security.promptForRemoteFileProtocolHandling": false,
+    "window.customTitleBarVisibility": "auto",
+    "[typst]": {
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+    },
+    "[typst-code]": {
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+    },
+    "chat.commandCenter.enabled": false,
+    "continue.disableQuickFix": true,
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "compact"
 }

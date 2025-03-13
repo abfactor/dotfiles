@@ -25,120 +25,123 @@
         "command": "jumpToPrevSnippetPlaceholder",
         "when": "editorTextFocus && hasPrevTabstop && inSnippetMode"
     },
+
     // Moving
-    {
-        "key": "alt+k",
-        "command": "cursorMove",
-        "args": {
-            "to": "up",
-            "by": "line",
-            "value": 1
-        },
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+j",
-        "command": "cursorMove",
-        "args": {
-            "to": "down",
-            "by": "line",
-            "value": 1
-        },
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+h",
-        "command": "cursorMove",
-        "args": {
-            "to": "left",
-            "by": "character",
-            "value": 1
-        },
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+l",
-        "command": "cursorMove",
-        "args": {
-            "to": "right",
-            "by": "character",
-            "value": 1
-        },
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+d alt+d",
-        "command": "editor.action.deleteLines",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+e",
-        "command": "cursorEnd",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+a",
-        "command": "cursorHome",
-        "when": "editorTextFocus"
-    },
-    {
-        "command": "runCommands",
-        "key": "alt+b",
-        "args": {
-            "commands": [
-                "scrollPageUp",
-                "cursorPageUp",
-            ],
-        },
-        "when": "textInputFocus"
-    },
-    {
-        "command": "runCommands",
-        "key": "alt+f",
-        "args": {
-            "commands": [
-                "scrollPageDown",
-                "cursorPageDown",
-            ],
-        },
-        "when": "textInputFocus"
-    },
+    // {
+    //     "key": "alt+k",
+    //     "command": "cursorMove",
+    //     "args": {
+    //         "to": "up",
+    //         "by": "line",
+    //         "value": 1
+    //     },
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "alt+j",
+    //     "command": "cursorMove",
+    //     "args": {
+    //         "to": "down",
+    //         "by": "line",
+    //         "value": 1
+    //     },
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "alt+h",
+    //     "command": "cursorMove",
+    //     "args": {
+    //         "to": "left",
+    //         "by": "character",
+    //         "value": 1
+    //     },
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "alt+l",
+    //     "command": "cursorMove",
+    //     "args": {
+    //         "to": "right",
+    //         "by": "character",
+    //         "value": 1
+    //     },
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "alt+d alt+d",
+    //     "command": "editor.action.deleteLines",
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "alt+e",
+    //     "command": "cursorEnd",
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "alt+a",
+    //     "command": "cursorHome",
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "command": "runCommands",
+    //     "key": "alt+b",
+    //     "args": {
+    //         "commands": [
+    //             "scrollPageUp",
+    //             "cursorPageUp",
+    //         ],
+    //     },
+    //     "when": "textInputFocus"
+    // },
+    // {
+    //     "command": "runCommands",
+    //     "key": "alt+f",
+    //     "args": {
+    //         "commands": [
+    //             "scrollPageDown",
+    //             "cursorPageDown",
+    //         ],
+    //     },
+    //     "when": "textInputFocus"
+    // },
+
     // i_CTRL-O execute one comand, return to Insert mode
-    {
-        "key": "ctrl+o a",
-        "command": "cursorMove",
-        "args": {
-            "to": "right",
-            "by": "character",
-            "value": 1
-        },
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+o shift+a",
-        "command": "cursorEnd",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+o 0",
-        "command": "cursorHome",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+o s",
-        "command": "editor.action.startFindReplaceAction",
-        "when": "editorFocus || editorIsOpen"
-    },
-    {
-        "key": "ctrl+o /",
-        "command": "actions.find",
-        "when": "editorFocus || editorIsOpen"
-    },
-    {
-        "key": "ctrl+o shift+;",
-        "command": "workbench.action.showCommands",
-        "when": "editorFocus || editorIsOpen"
-    },
+    // {
+    //     "key": "ctrl+o a",
+    //     "command": "cursorMove",
+    //     "args": {
+    //         "to": "right",
+    //         "by": "character",
+    //         "value": 1
+    //     },
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "ctrl+o shift+a",
+    //     "command": "cursorEnd",
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "ctrl+o 0",
+    //     "command": "cursorHome",
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "ctrl+o s",
+    //     "command": "editor.action.startFindReplaceAction",
+    //     "when": "editorFocus || editorIsOpen"
+    // },
+    // {
+    //     "key": "ctrl+o /",
+    //     "command": "actions.find",
+    //     "when": "editorFocus || editorIsOpen"
+    // },
+    // {
+    //     "key": "ctrl+o shift+;",
+    //     "command": "workbench.action.showCommands",
+    //     "when": "editorFocus || editorIsOpen"
+    // },
+
     // Annoying browser features
     {
         "key": "ctrl+q",
@@ -167,6 +170,7 @@
         "command": "-workbench.action.files.openFile",
         "when": "true"
     },
+    
     // ctrl+h as backspace
     {
         "key": "ctrl+h",
@@ -177,6 +181,10 @@
         "key": "ctrl+h",
         "command": "deleteLeft",
         "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-editor.action.clipboardPasteAction"
     },
 
 ]

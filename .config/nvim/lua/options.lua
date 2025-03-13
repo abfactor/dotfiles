@@ -37,7 +37,8 @@ vim.opt.tabstop = 4
 
 vim.opt.cursorline = true
 vim.opt.laststatus = 2
-vim.opt.showcmd = false
+vim.opt.showcmd = true
+vim.opt.showcmdloc = 'statusline'
 vim.opt.ruler = false
 vim.opt.number = true
 vim.opt.numberwidth = 3

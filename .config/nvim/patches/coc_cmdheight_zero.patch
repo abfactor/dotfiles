@@ -1,0 +1,20 @@
+diff --git a/autoload/coc/list.vim b/autoload/coc/list.vim
+index 843726a6..4b7d22a1 100644
+--- a/autoload/coc/list.vim
++++ b/autoload/coc/list.vim
+@@ -61,6 +61,7 @@ function! coc#list#status(name)
+ endfunction
+ 
+ function! coc#list#create(position, height, name, numberSelect)
++  set cmdheight=1
+   if a:position ==# 'tab'
+     call coc#ui#safe_open('silent tabe', 'list:///'.a:name)
+   else
+@@ -145,6 +146,7 @@ function! coc#list#close(winid, position, target_win, saved_height) abort
+     endif
+     " call coc#rpc#notify('Log', ["close", a:target_win, v])
+   endif
++  set cmdheight=0
+ endfunction
+ 
+ function! coc#list#select(bufnr, line) abort

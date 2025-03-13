@@ -26,6 +26,8 @@ vim.g.loaded_ruby_provider = 0
 vim.api.nvim_create_user_command('Term', ':tab term', {})
 vim.keymap.set('n', '<leader>t', ':Term<CR>', { silent = true })
 
-require('line')
+require('cfg.pckr_cfg')
 -- require("cfg.lsp_cfg")
 -- require('cfg.treesitter_cfg')
+require('cfg.coc_cfg')
+require('cfg.lualine_cfg')
