@@ -16,6 +16,11 @@
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
     },
     {
+        "key": "ctrl+n",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
         "key": "ctrl+j",
         "command": "jumpToNextSnippetPlaceholder",
         "when": "editorTextFocus && hasNextTabstop && inSnippetMode"

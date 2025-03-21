@@ -10,7 +10,6 @@
     "editor.fontFamily": "'JetBrains Mono NL','Droid Sans Mono', 'monospace'",
     "editor.trimAutoWhitespace": true,
     "editor.renderWhitespace": "trailing",
-    "editor.inlineSuggest.suppressSuggestions": true,
 
     "terminal.external.linuxExec": "kgx",
     "terminal.integrated.allowChords": false,
@@ -76,7 +75,6 @@
     "editor.accessibilitySupport": "off",
     "editor.cursorBlinking": "smooth",
     "editor.minimap.enabled": false,
-    "editor.inlineSuggest.syntaxHighlightingEnabled": true,
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -92,7 +90,8 @@
         "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
     },
     "chat.commandCenter.enabled": false,
-    "continue.disableQuickFix": true,
     "window.commandCenter": false,
-    "window.menuBarVisibility": "compact"
+    "window.menuBarVisibility": "compact",
+    "editor.inlineSuggest.edits.showCollapsed": true,
+    "git.autofetch": true
 }

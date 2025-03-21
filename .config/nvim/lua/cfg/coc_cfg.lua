@@ -199,5 +199,6 @@ vim.g.coc_global_extensions = {
     'coc-clangd',
     'coc-rust-analyzer',
     'coc-markdownlint',
-    'coc-highlight'
+    'coc-highlight',
+    'coc-snippets'
 }

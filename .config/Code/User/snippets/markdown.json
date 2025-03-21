@@ -40,7 +40,8 @@
 			"```cpp",
 			"$1",
 			"```"
-		]
+		],
+		"description": "Cpp code block"
 	},
 	"python": {
 		"prefix": "python",
@@ -58,6 +59,23 @@
 			"```"
 		]
 	},
+	"bash": {
+		"prefix": "bash",
+		"body": [
+			"```bash",
+			"$1",
+			"```"
+		]
+	},
+	"plain": {
+		"prefix": "plain",
+		"body": [
+			"```plain",
+			"$1",
+			"```"
+		],
+		"description": "Plain text"
+	},
 	"inline code": {
 		"prefix": "icode",
 		"body": [
@@ -65,7 +83,7 @@
 		]
 	},
 	"math": {
-		"prefix": "math",
+		"prefix": ["display", "math"],
 		"body": [
 			"$$",
 			"$1",
@@ -73,9 +91,13 @@
 		]
 	},
 	"inline math": {
-		"prefix": "imath",
+		"prefix": ["inline", "imath", "im"],
 		"body": [
 			"$$1$",
 		]
 	},
+	"item": {
+		"prefix": "item",
+		"body": "* $1"
+	}
 }
