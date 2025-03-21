@@ -1,1 +1,55 @@
-set nu
+vim9script
+
+set nocompatible
+
+filetype on
+syntax on
+set nohlsearch
+# tab & sapce
+set smarttab
+set shiftwidth=4
+set tabstop=4
+set softtabstop=0
+set expandtab
+# set nowrap
+
+set cindent
+set cinoptions=g-1
+set cinoptions=(0
+set backspace=2
+
+set formatoptions=vt
+set magic
+set nobackup
+set nowritebackup
+set hidden
+set history=1000
+set ignorecase
+set noswapfile
+set number
+# set colorcolumn=81
+set signcolumn=number
+# set number relativenumber
+# set termguicolors
+# set cursorline
+set fillchars=vert:│
+set mouse=a
+set listchars=tab:▿┄▿,trail:▫
+# set list
+# -- gui config
+set guifont=JetBrains\ Mono:h14
+set guioptions=g
+
+# set nolazyredraw
+# set lazyredraw
+set laststatus=2
+# set cmdheight=0
+set showtabline=1
+set belloff=all
+set showmode
+set ruler
+set updatetime=200
+set shortmess+=c
+set cpt=.,k,w,b
+set completeopt=menu,menuone
+nnoremap Q <Nop>
