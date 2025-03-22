@@ -37,7 +37,7 @@ function try_until_success() {
     local i=1
     while true
     do echo "Try $i $* at $(date): "
-        "$*" && break
+        "$@" && break
         (( i+=1 ))
         sleep 3
     done

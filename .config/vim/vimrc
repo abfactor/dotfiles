@@ -53,3 +53,5 @@ set shortmess+=c
 set cpt=.,k,w,b
 set completeopt=menu,menuone
 nnoremap Q <Nop>
+
+colorscheme  retrobox
