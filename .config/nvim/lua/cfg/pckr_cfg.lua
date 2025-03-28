@@ -31,13 +31,13 @@ local function patch_plugin(plugin, patch)
 end
 
 require('pckr').add {
-  {
-    'neoclide/coc.nvim',
-    branch = "release",
-    run = function()
-      patch_plugin("coc.nvim", "coc_cmdheight_zero.patch")
-    end
-  },
+  -- {
+  --   'neoclide/coc.nvim',
+  --   branch = "release",
+  --   run = function()
+  --     patch_plugin("coc.nvim", "coc_cmdheight_zero.patch")
+  --   end
+  -- },
   {
     'nvim-lualine/lualine.nvim',
   },

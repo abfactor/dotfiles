@@ -55,3 +55,4 @@ vim.opt.formatoptions:remove{"c", "r", "o"}
 vim.opt.linebreak = true
 
 vim.diagnostic.config({ virtual_text = true })
+vim.opt.winborder = 'rounded'
