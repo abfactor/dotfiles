@@ -8,3 +8,5 @@
 	email = shichuanyim@gmail.com
 [init]
 	defaultBranch = main
+[core]
+	editor = nvim

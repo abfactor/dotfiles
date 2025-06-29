@@ -43,7 +43,6 @@
     "workbench.startupEditor": "none",
 
     "workbench.tips.enabled": false,
-    "workbench.editor.tabSizing": "shrink",
     "workbench.editor.autoLockGroups": {
         "workbench.editor.chatSession": true,
         "imagePreview.previewEditor": true
@@ -52,7 +51,6 @@
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.limit.value": 7,
     "workbench.editor.limit.enabled": true,
-    "workbench.activityBar.location": "top",
 
     "explorer.confirmDelete": true,
     "vscodeMarkdownNotes.createNoteOnGoToDefinitionWhenMissing": false,
@@ -78,11 +76,11 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "GitHub Dark Default",
     "window.enableMenuBarMnemonics": false,
     "security.promptForLocalFileProtocolHandling": false,
     "security.promptForRemoteFileProtocolHandling": false,
-    "window.customTitleBarVisibility": "auto",
+    "window.customTitleBarVisibility": "never",
     "[typst]": {
         "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
     },
@@ -90,8 +88,15 @@
         "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
     },
     "chat.commandCenter.enabled": false,
-    "window.commandCenter": false,
-    "window.menuBarVisibility": "compact",
     "editor.inlineSuggest.edits.showCollapsed": true,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "accessibility.accessibleView.closeOnKeyPress": false,
+    "extensions.verifySignature": false,
+    "editor.unicodeHighlight.allowedLocales": {
+        "zh-hans": true
+    },
+    "window.commandCenter": false,
+    "files.autoSave": "afterDelay",
+    "window.menuBarVisibility": "compact",
+    "window.controlsStyle": "custom"
 }
