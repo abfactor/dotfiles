@@ -196,9 +196,4 @@
         "key": "ctrl+v",
         "command": "-editor.action.clipboardPasteAction"
     },
-    {
-        "key": "ctrl+alt+win+n",
-        "command": "-welcome.showNewFileEntries"
-    },
-
 ]

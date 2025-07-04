@@ -8,9 +8,14 @@ function av() {
 
 # proxy
 function set_proxy() {
-    export all_proxy=http://127.0.0.1:7897
+    export https_proxy=http://127.0.0.1:7897
+    export http_proxy=http://127.0.0.1:7897
+    export all_proxy=socks5://127.0.0.1:7897
 }
+
 function unset_proxy() {
+    unset all_proxy
+    unset http_proxy
     unset all_proxy
 }
 
