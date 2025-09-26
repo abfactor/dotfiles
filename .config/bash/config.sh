@@ -18,6 +18,9 @@ shopt -s histappend
 # git clone --bare <git-repo-url> $HOME/.config/cfg
 # alias config="/usr/bin/git --git-dir=$HOME/.config/cfg/ --work-tree=$HOME"
 # config checkout
+# 
+# yadm clone git@github.com:abfea/dotfiles.git
+# yadm check /home/y
 
 #### alias
 alias so="source"

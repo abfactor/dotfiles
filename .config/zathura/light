@@ -16,8 +16,9 @@ set notification-warning-bg "#AC4142"
 set notification-fg "#000000"
 set notification-bg "#e3e3e3"
 
-set highlight-color "#F4BF75"
-set highlight-active-color "#6A9FB5"
+set highlight-fg "#000000"
+set highlight-color "#739EC9"
+set highlight-active-color "#739EC9"
 
 set completion-highlight-fg "#151515"
 set completion-highlight-bg "#90A959"

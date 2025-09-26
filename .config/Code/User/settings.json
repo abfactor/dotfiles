@@ -6,7 +6,7 @@
 
     "git.openRepositoryInParentFolders": "always",
     "telemetry.telemetryLevel": "off",
-    "editor.fontSize": 20,
+    "editor.fontSize": 17,
     "editor.fontFamily": "'JetBrains Mono NL','Droid Sans Mono', 'monospace'",
     "editor.trimAutoWhitespace": true,
     "editor.renderWhitespace": "trailing",
@@ -80,7 +80,6 @@
     "window.enableMenuBarMnemonics": false,
     "security.promptForLocalFileProtocolHandling": false,
     "security.promptForRemoteFileProtocolHandling": false,
-    "window.customTitleBarVisibility": "never",
     "[typst]": {
         "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
     },
@@ -98,5 +97,10 @@
     "window.commandCenter": false,
     "files.autoSave": "afterDelay",
     "window.menuBarVisibility": "compact",
-    "window.controlsStyle": "custom"
+    "workbench.activityBar.location": "top",
+    "window.zoomLevel": 1,
+    "window.density.editorTabHeight": "compact",
+    "qt-qml.qmlls.additionalImportPaths": [
+        "/usr/lib/qt6/qml/"
+    ]
 }

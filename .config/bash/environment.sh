@@ -63,8 +63,8 @@ export PATH="$PATH:$HOME/.cargo/bin"
 ## Alacritty
 # alias alacritty="WINIT_UNIX_BACKEND=x11 alacritty"
 ## rustup
-export RUSTUP_UPDATE_ROOT="https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup"
-export RUSTUP_DIST_SERVER="https://mirrors.tuna.tsinghua.edu.cn/rustup"
+export RUSTUP_DIST_SERVER="https://mirrors.huaweicloud.com/rustup/"
+export RUSTUP_UPDATE_ROOT="https://mirrors.huaweicloud.com/rustup/rustup/"
 
 ## fcitx5
 # export FCITX_X11_USE_CLIENT_SIDE_UI=1
