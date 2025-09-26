@@ -43,7 +43,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
   end,
 })
 
--- require('cfg.pckr_cfg')
+-- require('cfg.pkmgr')
 -- require("cfg.lsp_cfg")
 -- require('cfg.treesitter_cfg')
 -- require('cfg.coc_cfg')
