@@ -51,8 +51,7 @@ alias objdump="objdump -M intel "
 alias open="xdg-open"
 alias o="xdg-open"
 alias o.="xdg-open ."
-if [[ $TERM == "xterm-kitty" ]]
-then
+if [[ $TERM == "xterm-kitty" ]] then
     alias icat="kitty +kitten icat"
 fi
 

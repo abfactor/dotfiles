@@ -76,7 +76,6 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "workbench.colorTheme": "GitHub Dark Default",
     "window.enableMenuBarMnemonics": false,
     "security.promptForLocalFileProtocolHandling": false,
     "security.promptForRemoteFileProtocolHandling": false,
@@ -102,5 +101,13 @@
     "window.density.editorTabHeight": "compact",
     "qt-qml.qmlls.additionalImportPaths": [
         "/usr/lib/qt6/qml/"
-    ]
+    ],
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "hediet.vscode-drawio.resizeImages": null,
+    "workbench.editorAssociations": {
+        "*.pdf": "cweijan.officeViewer",
+        "*.md": "default"
+    },
+    "vscode-office.openOutline": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden"
 }
