@@ -93,9 +93,7 @@
     "editor.unicodeHighlight.allowedLocales": {
         "zh-hans": true
     },
-    "window.commandCenter": false,
     "files.autoSave": "afterDelay",
-    "window.menuBarVisibility": "compact",
     "workbench.activityBar.location": "top",
     "window.zoomLevel": 1,
     "window.density.editorTabHeight": "compact",
@@ -109,5 +107,6 @@
         "*.md": "default"
     },
     "vscode-office.openOutline": false,
-    "workbench.secondarySideBar.defaultVisibility": "hidden"
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "window.menuBarVisibility": "compact"
 }

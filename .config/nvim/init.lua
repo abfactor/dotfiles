@@ -3,16 +3,16 @@ require('options')
 require('utils')
 require('lsp')
 -- require('line')
-require('cfg.pkmgr')
+-- require('cfg.pkmgr')
 -- require("cfg.lsp_cfg")
 -- require('cfg.treesitter_cfg')
 -- require('cfg.coc_cfg')
-require('cfg.lualine_cfg')
+-- require('cfg.lualine_cfg')
 
 
 -- Colors
 vim.opt.bg = 'dark'
-vim.cmd.colorscheme('sonokai')
+-- vim.cmd.colorscheme('sonokai')
 vim.cmd 'highlight MatchParen term=underline gui=underline cterm=underline'
 vim.cmd 'highlight Normal ctermbg=NONE guibg=NONE'
 
