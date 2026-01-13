@@ -100,7 +100,7 @@
     "qt-qml.qmlls.additionalImportPaths": [
         "/usr/lib/qt6/qml/"
     ],
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Monokai",
     "hediet.vscode-drawio.resizeImages": null,
     "workbench.editorAssociations": {
         "*.pdf": "cweijan.officeViewer",

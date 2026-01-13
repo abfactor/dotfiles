@@ -146,6 +146,16 @@
         "command": "workbench.action.showCommands",
         "when": "editorFocus || editorIsOpen"
     },
+    {
+        "key": "ctrl+o o",
+        "command": "editor.action.insertLineAfter",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+o shift+o",
+        "command": "editor.action.insertLineBefore",
+        "when": "editorFocus || editorIsOpen"
+    },
 
     // Annoying browser features
     {
@@ -196,4 +206,34 @@
         "key": "ctrl+v",
         "command": "-editor.action.clipboardPasteAction"
     },
+    {
+        "key": "ctrl+shift+v",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-actions.find",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "scrollPageDown",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "scrollPageUp",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "editorFocus || editorIsOpen"
+    }
 ]
