@@ -18,5 +18,7 @@ vim.pack.add({
   { src = 'https://github.com/L3MON4D3/LuaSnip' },
   { src = 'https://github.com/nvim-lualine/lualine.nvim' },
   { src = 'https://github.com/nvim-mini/mini.nvim' },
+  { src = 'https://github.com/junegunn/fzf' },
+  { src = 'https://github.com/junegunn/fzf.vim' },
 
 })
