@@ -108,5 +108,8 @@
     },
     "vscode-office.openOutline": false,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "window.menuBarVisibility": "compact"
+    "window.menuBarVisibility": "compact",
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    }
 }
