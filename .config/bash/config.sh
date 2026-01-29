@@ -20,7 +20,7 @@ shopt -s histappend
 # config checkout
 # 
 # yadm clone git@github.com:abfea/dotfiles.git
-# yadm check /home/y
+# yadm checkout --force
 
 #### alias
 alias so="source"
@@ -55,9 +55,11 @@ if [[ $TERM == "xterm-kitty" ]] then
     alias icat="kitty +kitten icat"
 fi
 
-## Pager
-export MANPAGER='sh -c "col -bx | bat -pl man "'
-export MANROFFOPT='-c'
+# bat
+if [[ $(type -P bat) ]]; then
+    export MANPAGER='sh -c "col -bx | bat -pl man "'
+    export MANROFFOPT='-c'
+fi
 
 ### Apps
 # eval "$(zoxide init bash)"
