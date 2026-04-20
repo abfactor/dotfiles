@@ -6,7 +6,7 @@
 
     "git.openRepositoryInParentFolders": "always",
     "telemetry.telemetryLevel": "off",
-    "editor.fontSize": 17,
+    "editor.fontSize": 15,
     "editor.fontFamily": "'JetBrains Mono NL','Droid Sans Mono', 'monospace'",
     "editor.trimAutoWhitespace": true,
     "editor.renderWhitespace": "trailing",
@@ -39,7 +39,6 @@
 
     "workbench.list.scrollByPage": true,
     "workbench.editor.defaultBinaryEditor": "hexEditor.hexedit",
-    "workbench.editor.pinnedTabSizing": "shrink",
     "workbench.startupEditor": "none",
 
     "workbench.tips.enabled": false,
@@ -96,11 +95,10 @@
     "files.autoSave": "afterDelay",
     "workbench.activityBar.location": "top",
     "window.zoomLevel": 1,
-    "window.density.editorTabHeight": "compact",
     "qt-qml.qmlls.additionalImportPaths": [
         "/usr/lib/qt6/qml/"
     ],
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
     "hediet.vscode-drawio.resizeImages": null,
     "workbench.editorAssociations": {
         "*.pdf": "cweijan.officeViewer",
@@ -111,5 +109,8 @@
     "window.menuBarVisibility": "compact",
     "[c]": {
         "editor.defaultFormatter": "xaver.clang-format"
-    }
+    },
+    "chat.agentsControl.enabled": false,
+    "chat.agent.enabled": false,
+    "chat.checkpoints.enabled": false
 }
